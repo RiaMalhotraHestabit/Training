@@ -1,0 +1,51 @@
+export const users = [
+  {
+    id: 1,
+    name: "Devender Malhotra",
+    email: "devender@gmail.com",
+    role: "Frontend Developer",
+    status: "Active",
+    avatar: "/images/user1.png",
+  },
+  {
+    id: 2,
+    name: "Ria Malhotra",
+    email: "ria@gmail.com",
+    role: "Backend Developer",
+    status: "Active",
+    avatar: "/images/user2.png",
+  },
+  {
+    id: 3,
+    name: "Alice Johnson",
+    email: "alice@gmail.com",
+    role: "UI/UX Designer",
+    status: "Inactive",
+    avatar: "/images/user3.png",
+  },
+  {
+    id: 4,
+    name: "Michael Lee",
+    email: "michael@gmail.com",
+    role: "Full Stack Developer",
+    status: "Inactive",
+    avatar: "/images/user4.png",
+  },
+  {
+    id: 5,
+    name: "Sofia Martinez",
+    email: "sofia@gmail.com",
+    role: "Product Manager",
+    status: "Inactive",
+    avatar: "/images/user5.png",
+  },
+  {
+    id: 6,
+    name: "David Kim",
+    email: "david@gmail.com",
+    role: "Administrator",
+    status: "Active",
+    avatar: "/images/user6.png",
+  },
+
+];

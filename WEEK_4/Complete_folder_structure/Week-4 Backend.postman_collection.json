@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "ec2c7f0c-5f58-41bc-8189-edbd63137805",
+		"name": "Week-4 Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "52025022",
+		"_collection_link": "https://riam-hestabit-498506.postman.co/workspace/6175180b-4ff1-41fb-827c-822e496b2b2e/collection/52025022-ec2c7f0c-5f58-41bc-8189-edbd63137805?action=share&source=collection_link&creator=52025022"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": []
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

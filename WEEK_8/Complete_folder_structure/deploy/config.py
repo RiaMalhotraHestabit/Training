@@ -1,0 +1,9 @@
+MODEL_PATH = "quantized/model.gguf"
+
+DEFAULT_TEMPERATURE = 0.7
+DEFAULT_TOP_P = 0.9
+DEFAULT_TOP_K = 40
+MAX_TOKENS = 200
+
+HOST = "0.0.0.0"
+PORT = 8000

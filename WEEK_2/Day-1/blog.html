@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tutorial Blog by Ria Malhotra</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Semantic HTML Tutorial Blog</h1>
+    <p>Learning HTML5 structure, accessibility, and clean markup</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#semantic">Semantic Tags</a></li>
+        <li><a href="#learning_url">Learning Resources</a></li>
+        <li><a href="#video">Video Tutorial section</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article>
+      <header>
+        <h2 id="intro">Understanding Semantic HTML</h2>
+        <p>
+          <time datetime="2026-01-12">January 12, 2026</time> ·
+          <span>By Ria Malhotra</span>
+        </p>
+      </header>
+
+      <section>
+
+        <h2> Introduction</h2>
+
+        <h3>What is Semantic HTML?</h3>
+        <p>
+          Semantic HTML uses meaningful tags that describe the purpose of the content.
+          Instead of generic containers, elements like <code>&lt;article&gt;</code>,
+          <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code> improve readability,
+          accessibility, and SEO.
+        </p>
+      </section>
+
+      <section id="semantic">
+        <h3>Common Semantic Elements </h3>
+        <ul>
+          <li><strong>&lt;header&gt;</strong> : introductory content</li>
+          <li><strong>&lt;nav&gt;</strong> : navigation links</li>
+          <li><strong>&lt;main&gt;</strong> : primary page content</li>
+          <li><strong>&lt;article&gt;</strong> : independent content</li>
+          <li><strong>&lt;section&gt;</strong> : grouped topics</li>
+          <li><strong>&lt;aside&gt;</strong> : supplementary information</li>
+          <li><strong>&lt;footer&gt;</strong> : metadata and links</li>
+        </ul>
+      </section>
+
+      <section id="learning_url">
+        <h3>Learning Resources</h3>
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSozb7c_2eS6gzf7jpT26N2CUp4Y-cFl5MvA&s" alt="GFG HTML course" width ="500">
+            <figcaption>HTML reference from GeeksforGeeks</figcaption>
+        </figure>
+        <ul>
+            <li> url link: 
+            <a href="https://www.geeksforgeeks.org/html/html-course-basics-of-html/"
+                target="_blank">
+                Learn Semantic HTML on GeeksforGeeks
+            </a>
+            </li>
+        </ul>
+        <figure>
+            <img src="https://www.tutorialspoint.com/images/tp_bottom_logo.png" alt="Tutorials point semantic HTML course" width ="500">
+            <figcaption>HTML reference from Tutorials point.</figcaption>
+        </figure>
+        <ul>
+            <li>Url link:
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tutorialspoint.com/html5-semantics&ved=2ahUKEwigueeMhoaSAxVWWGwGHexbKfAQFnoECBkQAQ&usg=AOvVaw3amCJ-QXagq4xVyyrpqnNi"
+                target="_blank">
+                Practice Semantic HTML5 on TutorialsPoint
+            </a>
+            </li>
+        </ul>
+      </section>
+
+      <section id="video">
+        <h3>Video Tutorial</h3>
+
+        <p>The following video explains semantic HTML elements with real examples.</p>
+
+        <video src="video.mp4" controls width="500" aria-label="Semantic HTML video tutorial">
+            <!---<source src="video.mp4"> this can also be used-->
+        </video>
+
+
+      </section>
+
+      <section id="accessibility">
+        <h2> Accessibility</h2>
+        <h3>Accessibility Best Practices</h3>
+        <p>
+          Accessibility ensures content is usable by everyone, including screen reader
+          and keyboard users.
+        </p>
+        <ul>
+          <li>Use proper labels for form inputs</li>
+          <li>Provide alt text for images</li>
+          <li>Use ARIA labels where needed</li>
+          <li>Ensure logical tab navigation</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Tags: <mark>HTML5</mark>, <mark>Semantic HTML</mark>, <mark>Accessibility</mark></p>
+      </footer>
+    </article>
+
+    <aside aria-label="Additional learning resources">
+      <h2>Quick Tips</h2>
+      <p>
+        Avoid using <code>&lt;div&gt;</code> when a semantic element fits the purpose.
+        Always choose meaning over convenience.
+      </p>
+    </aside>
+
+    <section id="feedback">
+      <h2>Feedback Form</h2>
+      <form aria-label="Feedback form">
+        <p>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required tabindex="0" />
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
+        </p>
+
+        <p>
+          <label for="topic">What did you learn today?</label><br />
+          <select id="topic" name="topic">
+            <option value="semantic">Semantic HTML</option>
+            <option value="accessibility">Accessibility</option>
+            <option value="forms">Forms</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Submit Feedback</button>
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Semantic HTML Tutorial Blog</p>
+    <p>Built using only HTML5 semantic elements by Ria.</p>
+  </footer>
+
+</body>
+</html>

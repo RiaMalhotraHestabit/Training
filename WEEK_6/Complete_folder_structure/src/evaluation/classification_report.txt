@@ -1,0 +1,11 @@
+Classification Report - GradientBoosting
+============================================================
+
+              precision    recall  f1-score   support
+
+    No Churn     0.8943    0.7604    0.8219      1035
+       Churn     0.5312    0.7513    0.6224       374
+
+    accuracy                         0.7580      1409
+   macro avg     0.7128    0.7559    0.7222      1409
+weighted avg     0.7979    0.7580    0.7690      1409

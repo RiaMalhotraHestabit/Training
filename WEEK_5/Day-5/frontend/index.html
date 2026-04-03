@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CI-Style Capstone App</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 300px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      margin-top: -40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 350px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      font-size: 14px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background: #94a3b8;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Production CI-Style Deployment</h1>
+    <p>Docker · Nginx · HTTPS · MongoDB</p>
+
+    <img src="https://dummyimage.com/600x300/1e293b/ffffff&text=Capstone+App" alt="App Banner" />
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Submit Your Details</h2>
+
+      <form id="form">
+        <label for="name">Name</label>
+        <input id="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <div id="status" class="status"></div>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById("form");
+    const statusDiv = document.getElementById("status");
+    const button = form.querySelector("button");
+
+    const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+    form.onsubmit = async (e) => {
+      e.preventDefault();
+      statusDiv.textContent = "";
+      button.disabled = true;
+
+      const payload = {
+      name: nameInput.value.trim(),
+      email: emailInput.value.trim(),
+      message: messageInput.value.trim(),
+    };
+
+      try {
+        const res = await fetch("/api/users", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) throw new Error("Request failed");
+
+        statusDiv.textContent = "Data saved successfully!";
+        statusDiv.className = "status success";
+        form.reset();
+      } catch (err) {
+        statusDiv.textContent = "Failed to save data. Try again.";
+        statusDiv.className = "status error";
+      } finally {
+        button.disabled = false;
+      }
+    };
+  </script>
+
+</body>
+</html>

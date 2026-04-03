@@ -1,0 +1,88 @@
+{
+  "totalWords": 122772,
+  "uniqueWords": 38,
+  "uniqueWordsList": [
+    "aliqua",
+    "dolor",
+    "consectetur",
+    "aliquip",
+    "voluptate",
+    "occaecat",
+    "fugiat",
+    "lorem",
+    "cupidatat",
+    "irure",
+    "cillum",
+    "consequat",
+    "nostrud",
+    "proident",
+    "nulla",
+    "eiusmod",
+    "adipisicing",
+    "ullamco",
+    "reprehenderit",
+    "magna",
+    "exercitation",
+    "officia",
+    "ipsum",
+    "laborum",
+    "culpa",
+    "mollit",
+    "commodo",
+    "tempor",
+    "minim",
+    "laboris",
+    "labore",
+    "velit",
+    "veniam",
+    "excepteur",
+    "pariatur",
+    "incididunt",
+    "deserunt",
+    "dolore"
+  ],
+  "longestWord": "reprehenderit",
+  "shortestWord": "dolor",
+  "topWords": [
+    [
+      "excepteur",
+      3360
+    ],
+    [
+      "laboris",
+      3352
+    ],
+    [
+      "adipisicing",
+      3348
+    ],
+    [
+      "aliquip",
+      3307
+    ],
+    [
+      "cupidatat",
+      3296
+    ],
+    [
+      "deserunt",
+      3294
+    ],
+    [
+      "incididunt",
+      3287
+    ],
+    [
+      "veniam",
+      3285
+    ],
+    [
+      "exercitation",
+      3273
+    ],
+    [
+      "ipsum",
+      3273
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running ESLint..."
+npx eslint test.js || exit 1
+
+echo "Running validate.sh..."
+./validate.sh || exit 1
+

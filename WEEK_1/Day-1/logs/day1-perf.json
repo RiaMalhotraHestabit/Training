@@ -1,0 +1,30 @@
+{
+  "file": "/home/riamalhotra/WEEK_1/Day-1/data/large-file.bin",
+  "fileSizeMB": "50.00 MB",
+  "results": [
+    {
+      "method": "buffer",
+      "timeMs": 26.296201,
+      "memoryBefore": {
+        "rss": "41.57 MB",
+        "heapUsed": "3.52 MB"
+      },
+      "memoryAfter": {
+        "rss": "93.50 MB",
+        "heapUsed": "3.92 MB"
+      }
+    },
+    {
+      "method": "stream",
+      "timeMs": 29.752478,
+      "memoryBefore": {
+        "rss": "93.50 MB",
+        "heapUsed": "3.92 MB"
+      },
+      "memoryAfter": {
+        "rss": "73.44 MB",
+        "heapUsed": "4.87 MB"
+      }
+    }
+  ]
+}
